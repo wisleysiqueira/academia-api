@@ -1,0 +1,6 @@
+CREATE TABLE ficha (
+    id BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+    id_usuario BIGINT(20) NOT NULL,
+    dh_registro DATETIME NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
